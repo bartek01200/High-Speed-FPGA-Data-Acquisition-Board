@@ -18,4 +18,5 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 - ECP5 place and route using nextpnr
 - 32 MHz FPGA timing target successfully met
 ## front PCB
-![Front PCB](images/front_pcb_new.png)
+![Front PCB](docs/images/front_pcb_new.png)
+
