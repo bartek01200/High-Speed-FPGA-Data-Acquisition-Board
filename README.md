@@ -17,6 +17,14 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 - FPGA synthesis using Yosys
 - ECP5 place and route using nextpnr
 - 32 MHz FPGA timing target successfully met
+
+##Key metrics include:
+- 256 Mbit/s raw acquisition bandwidth
+- 32 MB/s raw sample throughput
+- 0.50 µs FIFO depth at 32 MSPS
+- 7.3× FPGA timing headroom
+- 58 LUTs/44 flip-flops synthesized
+
 ## Front PCB
 ![Front PCB](docs/images/front_pcb_new.png)
 
