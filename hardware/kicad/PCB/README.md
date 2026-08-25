@@ -15,7 +15,9 @@ Parameter - Value
 -checked with design rules checker-
 ## Priority zones
 
-![Power Zone Priorities](../kicad/images/priority_zones.png)
+<p align="center">
+  <img src="../kicad/images/priority_zones.png" width="80%">
+</p>
 
 
 Power-zone priority: +3.3VA → +2.5V → +1.1V → +5V → +3.3V. Higher priority zones retain their copper area where zones approach or overlap, helping preserve supply distribution.
