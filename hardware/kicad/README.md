@@ -91,12 +91,11 @@ The layout was designed with consideration for:
 ##PCB Renders
 ### Front
 
-![Front PCB](images/front_pcb_new.png)
+![Front PCB](docs/images/front_pcb_new.png)
 
 ### Back
 
-![Back PCB](images/Back_of_pcb.png)
-
+![Back PCB](docs/images/Back_of_pcb.png)
 ##Design Status
 The schematic and PCB layout have been completed and PCB design rule checks were performed.
 
