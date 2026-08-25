@@ -1,8 +1,7 @@
 ##PCB Design Rules
-
 The PCB was routed as a 4-layer board with the following main design rules:
- Parameter - Value 
 
+Parameter - Value 
 - General signal trace width - 0.20 mm
 - FPGA BGA escape trace width - 0.10 mm
 - Standard via size - 0.60 mm 
@@ -14,3 +13,11 @@ The PCB was routed as a 4-layer board with the following main design rules:
 - Outer copper thickness - 35 µm
 
 -checked with design rules checker-
+## Priority zones
+
+<p align="center">
+  <img src="../../docs/images/In2_power_plane.svg" width="80%">
+</p>
+
+
+Power-zone priority: +3.3VA → +2.5V → +1.1V → +5V → +3.3V. Higher priority zones retain their copper area where zones approach or overlap, helping preserve supply distribution.
