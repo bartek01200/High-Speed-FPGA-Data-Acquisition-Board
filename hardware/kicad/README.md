@@ -18,6 +18,7 @@ The board was designed around a Lattice ECP5 FPGA and Analog Devices AD9280 8-bi
 
 ## PCB Stack-Up
 The board uses a 4-layer stack-up:
+A 4-layer was chosen instead of a simpler 2-layer board because the design combines a BGA FPGA, parallel ADC data routing, multiple power rails and sensitive analogue circuitry.
 
  Layer - Purpose 
  F.Cu  - Components and primary signal routing 
@@ -25,9 +26,11 @@ The board uses a 4-layer stack-up:
  In2.Cu  -Power distribution 
  B.Cu -Secondary signal routing 
 
-A continuous ground plane was used directly beneath the main signal layers to provide short return current paths and reduce signal loop area.
+Using a dedicated ground plane gives high speed signals a short return path, reduces loop area and makes the ADC to FPGA routing easier to read.
 
-The internal power layer distributes the FPGA core, auxiliary, digital and analogue supply rails.
+A separate internal power layer also makes it easier to distribute the 1.1V, 2.5V, 3.3V, 3.3VA and 5 V rails without filling the signal layers with wide power traces.
+
+A 2-layer board would have made BGA escape routing, power distribution and maintaining good return paths a lot  more difficult.
 
 ## Power Architecture
 The board generates several supply rails from the USB-C 5 V input:
@@ -39,11 +42,9 @@ The board generates several supply rails from the USB-C 5 V input:
   - 1.1 V — FPGA core supply
 
 Ferrite bead filtering is used to separate sensitive analogue supply sections from the main digital power network.
-
 Local decoupling capacitors are positioned around the FPGA, ADC and supporting ICs to provide high-frequency current locally and reduce supply noise.
 
 ## ADC to FPGA Interface
-
 The AD9280 presents each conversion to the FPGA through an 8-bit parallel digital bus.
 
  ADC Data - FPGA Ball 
