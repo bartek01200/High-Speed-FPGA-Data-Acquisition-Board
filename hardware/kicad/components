@@ -1,1 +1,97 @@
+#Components
 
+##FPGA — Lattice ECP5 `LFE5U-12F-6BG256C`
+Main digital processing device.
+
+Used for:
+- capturing the 8-bit ADC output
+- controlling acquisition
+- FIFO buffering
+- streamed readout
+- JTAG/configuration support
+### Why I chose it
+The ECP5 provided significantly more digital capability than required for a basic 8-bit ADC interface while still being practical for a student designed PCB. 
+It provides FPGA logic, block RAM,PLL/clocking resources and sufficient I/O for the parallel ADC interface.
+
+For this project, a much larger FPGA such as an Artix-7 would have added cost and design 
+complexity without providing a major advantage for an 8-bit, 32 MSPS-class acquisition system.
+
+Supply rails:
+- 1.1 V core
+- 2.5 V auxiliary
+- 3.3 V I/O
+
+Local **100 nF** capacitors provide high-frequency decoupling, while 10 µF capacitors provide larger local energy storage.
+
+##ADC — AD9280
+8-bit ADC rated up to 32 MSPS.
+Converts the analogue input into an 8-bit digital value from `0–255`, which is transferred in parallel to the FPGA.
+
+##OPA836
+### Why I chose it
+A normal low frequency general-purpose op-amp would not be appropriate in front of a multi-megasample ADC because its bandwidth and settling performance could limit the signal before conversion.
+The OPA836 was selected because it is a high speed amplifier intended for applications requiring substantially more bandwidth than general-purpose op-amps.
+
+High-speed op-amp used to condition and buffer the analogue signal before it reaches the ADC.
+A 49.9 Ω series resistor helps isolate the amplifier output from the ADC input and reduce ringing.
+
+##25 MHz Oscillator
+Provides the board clock.
+Its output is routed to FPGA ball E7.
+`E7` is the physical BGA pin through which the clock enters the FPGA.
+
+##W25Q128JVS Configuration Flash
+### Why I chose it
+Unlike a microcontroller, the FPGA does not permanently retain its configuration after power is removed. External flash therefore allows the FPGA bitstream to be stored and loaded again during startup.
+
+Stores the FPGA configuration so it can be loaded when the board powers up.
+
+Powered from 3.3 V and locally decoupled using a **100 nF capacitor**.
+
+
+##TLV62569 — 3.3 V Regulator
+Buck regulator converting:
+
+`5 V → 3.3 V`
+The 3.3 V rail powers the FPGA I/O and digital circuitry.
+A **4.7 µF input capacitor (C10)** is used near the regulator to reduce input ripple and provide local energy storage.
+
+
+##TLV62569 — 1.1 V Regulator
+Generates the FPGA core voltage:
+5 V → 1.1 V
+
+The FPGA core rail uses multiple:
+- 100 nF capacitors** for high-frequency decoupling
+
+- 10 µF capacitors** for bulk/local energy storage
+
+##LT1963 — 2.5 V Regulator
+Produces the FPGA auxiliary 2.5 V supply.
+A linear regulator was used because the auxiliary rail benefits from a relatively clean supply and carries less current than the FPGA core rail.
+
+##Ferrite Beads
+Used to reduce high frequency noise between power domains.
+
+Main uses:
+- 3.3 V → ferrite bead → 3.3 VA
+- filtering of the 2.5 V auxiliary supply
+
+They pass DC power while presenting higher impedance to high frequency noise.
+
+##Capacitor Strategy
+Three main capacitor values are used:
+
+Value - Purpose 
+- 100 nF  - High-frequency IC decoupling 
+- 4.7 µF  - Regulator input/local bulk capacitance 
+- 10 µF  - Larger local energy storage 
+
+The general idea is:
+Power rail → bulk capacitor → local 100 nF capacitor → IC
+The smaller capacitor handles fast switching noise, while the larger capacitor supports slower current changes.
+
+
+##Grounding
+A continuous internal ground plane is used rather than splitting analogue and digital ground.
+This provides short return current paths and avoids forcing high-speed signals to cross gaps in the reference plane.
