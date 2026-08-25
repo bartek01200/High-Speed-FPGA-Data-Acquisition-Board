@@ -90,9 +90,11 @@ The layout was designed with consideration for:
 
 ##PCB Renders
 ### Front
-![Front PCB](docs/images/front_pcb_new.pn
+
+![Front PCB](docs/images/front_pcb_new.png)
 
 ### Back
+
 ![Back PCB](docs/images/Back_of_pcb.png)
 
 ##Design Status
