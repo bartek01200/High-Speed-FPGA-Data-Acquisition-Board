@@ -17,6 +17,11 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 - FPGA synthesis using Yosys
 - ECP5 place and route using nextpnr
 - 32 MHz FPGA timing target successfully met
-## front PCB
+## Front PCB
 ![Front PCB](docs/images/front_pcb_new.png)
 
+
+
+
+## Back PCB
+![Back PCB](docs/images/Back_of_pcb.png)
