@@ -20,7 +20,7 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 
 ##Key metrics include:
 The FPGA datapath handles a theoretical raw ADC input rate of 256 Mbit/s(32 MB/s), uses a 16-byte FIFO
-,and met a 32MHz timing target with 7.3× internal timing headroom, using only 58 LUTs and 44 flip flop.
+,and met a 32MHz timing,using only 58 LUTs and 44 flip flop.
 
 ## Front PCB
 ![Front PCB](docs/images/front_pcb_new.png)
