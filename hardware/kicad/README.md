@@ -89,11 +89,11 @@ The layout was designed with consideration for:
 - Short switching regulator current loops
 
 ##PCB Renders
+### Front
+![Front PCB](docs/images/front_pcb_new.pn
 
-<p align="center">
-  <img src="../docs/images/front_pcb_new.png" width="48%">
-  <img src="../docs/images/Back_of_pcb.png" width="48%">
-</p>
+### Back
+![Back PCB](docs/images/Back_of_pcb.png)
 
 ##Design Status
 The schematic and PCB layout have been completed and PCB design rule checks were performed.
