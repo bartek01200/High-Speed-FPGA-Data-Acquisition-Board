@@ -21,7 +21,10 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 ![Front PCB](docs/images/front_pcb_new.png)
 
 
-
-
 ## Back PCB
 ![Back PCB](docs/images/Back_of_pcb.png)
+
+## Hardware Build Disclaimer
+This project was intended to be physically assembled and tested. However, Mouser cancelled the component order before shipment due to complience issues.I later found that all analog devices needed customer verification which i was not aware of, this included critical parts such as the AD9280 ADC and LT1963 2.5 V regulator.
+
+As a result, the project was completed through PCB design, HDL simulation, synthesis and timing verification rather than physical hardware testing.
