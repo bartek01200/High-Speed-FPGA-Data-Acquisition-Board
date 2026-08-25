@@ -96,6 +96,8 @@ The layout was designed with consideration for:
 ### Back
 
 ![Back PCB](docs/images/Back_of_pcb.png)
+
+
 ##Design Status
 The schematic and PCB layout have been completed and PCB design rule checks were performed.
 
