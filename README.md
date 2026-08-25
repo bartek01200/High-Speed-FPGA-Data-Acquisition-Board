@@ -19,11 +19,8 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 - 32 MHz FPGA timing target successfully met
 
 ##Key metrics include:
-- 256 Mbit/s raw acquisition bandwidth
-- 32 MB/s raw sample throughput
-- 0.50 µs FIFO depth at 32 MSPS
-- 7.3× FPGA timing headroom
-- 58 LUTs/44 flip-flops synthesized
+The FPGA datapath handles a theoretical raw ADC input rate of 256 Mbit/s(32 MB/s), uses a 16-byte FIFO
+,and met a 32MHz timing target with 7.3× internal timing headroom, using only 58 LUTs and 44 flip flop.
 
 ## Front PCB
 ![Front PCB](docs/images/front_pcb_new.png)
