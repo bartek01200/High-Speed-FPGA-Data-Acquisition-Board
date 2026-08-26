@@ -33,3 +33,6 @@ The FPGA datapath handles a theoretical raw ADC input rate of 256 Mbit/s(32 MB/s
 This project was intended to be physically assembled and tested. However, Mouser cancelled the component order before shipment due to complience issues.I later found that all analog devices needed customer verification which i was not aware of, this included critical parts such as the AD9280 ADC and LT1963 2.5 V regulator.
 
 As a result, the project was completed through PCB design, HDL simulation, synthesis and timing verification rather than physical hardware testing.
+
+AI usage: Used AI for command-line guidance and toolchain troubleshooting. All PCB design, HDL implementation, integration, simulation, and project documentation were completed by me.
+
