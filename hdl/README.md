@@ -126,3 +126,11 @@ Completed:
 - bitstream generation
 
 Not physically verified due to the board not being assembled.
+
+### End to end simulation:
+![DAQ System Waveform](images/pass2.png)
+
+
+
+### FPGA timing verification:
+![32 MHz Timing Verification](images/oass.png)
