@@ -1,0 +1,245 @@
+Warning: IO 'tx_valid' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_ready' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[7]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[6]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[5]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[4]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[3]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[2]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[1]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'tx_data[0]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'start' is unconstrained in LPF and will be automatically placed
+Warning: IO 'reset' is unconstrained in LPF and will be automatically placed
+Warning: IO 'fifo_full' is unconstrained in LPF and will be automatically placed
+Warning: IO 'fifo_empty' is unconstrained in LPF and will be automatically placed
+Warning: IO 'capture_done' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[7]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[6]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[5]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[4]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[3]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[2]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[1]' is unconstrained in LPF and will be automatically placed
+Warning: IO 'adc_data[0]' is unconstrained in LPF and will be automatically placed
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:        88/24288     0%
+Info:         logic LUTs:     58/24288     0%
+Info:         carry LUTs:     18/24288     0%
+Info:           RAM LUTs:      8/ 3036     0%
+Info:          RAMW LUTs:      4/ 6072     0%
+
+Info:      Total DFFs:        44/24288     0%
+
+Info: Packing IOs..
+Info: pin 'clk$tr_io' constrained to Bel 'X24/Y0/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     30 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info: Checksum: 0x76081f27
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:      24/    197    12%
+Info: 	                DCCA:       1/     56     1%
+Info: 	              DP16KD:       0/     56     0%
+Info: 	          MULT18X18D:       0/     28     0%
+Info: 	              ALU54B:       0/     14     0%
+Info: 	             EHXPLLL:       0/      2     0%
+Info: 	             EXTREFB:       0/      1     0%
+Info: 	                DCUA:       0/      1     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       0/    128     0%
+Info: 	            SIOLOGIC:       0/     69     0%
+Info: 	                 GSR:       0/      1     0%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       0/      1     0%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/      8     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:      44/  24288     0%
+Info: 	        TRELLIS_COMB:     102/  24288     0%
+Info: 	        TRELLIS_RAMW:       2/   3036     0%
+
+Info: Placed 1 cells based on constraints.
+Info: Creating initial analytic placement for 63 cells, random placement wirelen = 5345.
+Info:     at initial placer iter 0, wirelen = 1352
+Info:     at initial placer iter 1, wirelen = 1196
+Info:     at initial placer iter 2, wirelen = 1128
+Info:     at initial placer iter 3, wirelen = 1109
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ALL: wirelen solved = 1111, spread = 1243, legal = 1257; time = 0.00s
+Info: HeAP Placer Time: 0.02s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 12, wirelen = 1257
+Info:   at iteration #5: temp = 0.000000, timing cost = 19, wirelen = 937
+Info:   at iteration #10: temp = 0.000000, timing cost = 25, wirelen = 902
+Info:   at iteration #15: temp = 0.000000, timing cost = 22, wirelen = 887
+Info:   at iteration #15: temp = 0.000000, timing cost = 21, wirelen = 891 
+Info: SA placement time 0.04s
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 220.95 MHz (PASS at 32.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 6.96 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 8.52 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 26724,  26913) |** 
+Info: [ 26913,  27102) |* 
+Info: [ 27102,  27291) | 
+Info: [ 27291,  27480) |******** 
+Info: [ 27480,  27669) |******* 
+Info: [ 27669,  27858) |*************** 
+Info: [ 27858,  28047) |****** 
+Info: [ 28047,  28236) | 
+Info: [ 28236,  28425) | 
+Info: [ 28425,  28614) |* 
+Info: [ 28614,  28803) |** 
+Info: [ 28803,  28992) |**** 
+Info: [ 28992,  29181) |*** 
+Info: [ 29181,  29370) | 
+Info: [ 29370,  29559) |******************** 
+Info: [ 29559,  29748) |************************* 
+Info: [ 29748,  29937) |********* 
+Info: [ 29937,  30126) |****** 
+Info: [ 30126,  30315) |** 
+Info: [ 30315,  30504) |*** 
+Info: Checksum: 0xfd9708d4
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 424 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        515 |       89        400 |   89   400 |         0|       0.08       0.08|
+Info: Routing complete.
+Info: Router1 time 0.08s
+Info: Checksum: 0x385c0c73
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source control_inst.sample_counter_TRELLIS_FF_Q.Q
+Info:    routing  1.15  1.67 Net start_LUT4_C_1_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1[0] (13,19) -> (12,21)
+Info:                          Sink start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  1.91 Source start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  1.91 Net start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT (12,21) -> (12,21)
+Info:                          Sink start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:157.46-157.48
+Info:      logic  0.17  2.07 Source start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  2.07 Net start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1 (12,21) -> (12,21)
+Info:                          Sink start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:157.62-157.64
+Info:      logic  0.24  2.32 Source start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.00  2.32 Net start_LUT4_C_Z_L6MUX21_Z_D1 (12,21) -> (12,21)
+Info:                          Sink start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:157.70-157.72
+Info:      logic  0.24  2.56 Source start_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.87  3.43 Net start_LUT4_C_1_Z[3] (12,21) -> (12,19)
+Info:                          Sink control_inst.done_TRELLIS_FF_Q_CE_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  3.66 Source control_inst.done_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.47  4.13 Net control_inst.done_TRELLIS_FF_Q_CE (12,19) -> (11,19)
+Info:                          Sink control_inst.done_TRELLIS_FF_Q.CE
+Info:      setup  0.00  4.13 Source control_inst.done_TRELLIS_FF_Q.CE
+Info: 1.65 ns logic, 2.48 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source reset$tr_io.O
+Info:    routing  3.77  3.77 Net reset$TRELLIS_IO_IN (38,0) -> (10,23)
+Info:                          Sink stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_BLUT_LUT4_Z_D_LUT4_Z.C
+Info:                          Defined in:
+Info:                               stream_tx.v:3.23-3.28
+Info:      logic  0.24  4.01 Source stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_BLUT_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.63  4.64 Net stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_BLUT_LUT4_Z_D[3] (10,23) -> (10,23)
+Info:                          Sink stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.88 Source stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  4.88 Net stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_ALUT (10,23) -> (10,23)
+Info:                          Sink stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:133.22-133.24
+Info:      logic  0.17  5.04 Source stream_inst.state_TRELLIS_FF_Q_2_DI_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.33  5.37 Net stream_inst.state_TRELLIS_FF_Q_2_DI (10,23) -> (10,23)
+Info:                          Sink stream_inst.state_TRELLIS_FF_Q_2.M
+Info:      setup  0.00  5.37 Source stream_inst.state_TRELLIS_FF_Q_2.M
+Info: 0.64 ns logic, 4.73 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source fifo_inst.count_TRELLIS_FF_Q.Q
+Info:    routing  0.95  1.48 Net fifo_inst.count[0] (11,22) -> (12,22)
+Info:                          Sink fifo_inst.count_TRELLIS_FF_Q_DI_L6MUX21_Z_1_SD_CCU2C_S0_S1_CCU2C_S1_CIN_CCU2C_COUT_S1_LUT4_Z.D
+Info:                          Defined in:
+Info:                               fifo.v:24.24-24.29
+Info:      logic  0.24  1.72 Source fifo_inst.count_TRELLIS_FF_Q_DI_L6MUX21_Z_1_SD_CCU2C_S0_S1_CCU2C_S1_CIN_CCU2C_COUT_S1_LUT4_Z.F
+Info:    routing  1.44  3.15 Net fifo_inst.count_TRELLIS_FF_Q_DI_L6MUX21_Z_1_SD[4] (12,22) -> (13,24)
+Info:                          Sink fifo_empty_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\FPGA-PROJECT\oss-cad-suite-windows-x64-20260823\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  3.39 Source fifo_empty_LUT4_Z.F
+Info:    routing  3.73  7.11 Net fifo_empty$TRELLIS_IO_OUT (13,24) -> (72,23)
+Info:                          Sink fifo_empty$tr_io.I
+Info:                          Defined in:
+Info:                               stream_tx.v:6.23-6.33
+Info: 1.00 ns logic, 6.12 ns routing
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 242.13 MHz (PASS at 32.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 5.37 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 7.11 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 27120,  27280) |** 
+Info: [ 27280,  27440) |*** 
+Info: [ 27440,  27600) |*** 
+Info: [ 27600,  27760) |************** 
+Info: [ 27760,  27920) |************* 
+Info: [ 27920,  28080) |**** 
+Info: [ 28080,  28240) |****** 
+Info: [ 28240,  28400) | 
+Info: [ 28400,  28560) |* 
+Info: [ 28560,  28720) | 
+Info: [ 28720,  28880) | 
+Info: [ 28880,  29040) |* 
+Info: [ 29040,  29200) |****** 
+Info: [ 29200,  29360) | 
+Info: [ 29360,  29520) |**************** 
+Info: [ 29520,  29680) |******** 
+Info: [ 29680,  29840) |**************** 
+Info: [ 29840,  30000) |************ 
+Info: [ 30000,  30160) |***** 
+Info: [ 30160,  30320) |**** 
+23 warnings, 0 errors
+
+Info: Program finished normally.
