@@ -4,7 +4,7 @@ This folder contains the hardware design files for the high Speed FPGA Data Acqu
 
 The board was designed around a Lattice ECP5 FPGA and Analog Devices AD9280 8-bit ADC, with analogue signal conditioning, multi rail power regulation, FPGA configuration circuitry and parallel ADC-to-FPGA routing implemented on a custom 4-layer PCB.
 
-## Main Components
+## Main components
 - **FPGA:** Lattice  LFE5U-12F-6BG256C
 - **ADC:** Analog Devices  AD9280ARSZRL — 8-bit ADC, rated up to 32 MSPS
 - **Analogue Amplifier:** OPA836
@@ -16,7 +16,7 @@ The board was designed around a Lattice ECP5 FPGA and Analog Devices AD9280 8-bi
 - **Programming Interface:** JTAG
 - **Power Input:** USB-C
 
-## PCB Stack-Up
+## PCB stack up
 The board uses a 4-layer stack-up:
 A 4-layer was chosen instead of a simpler 2-layer board because the design combines a BGA FPGA, parallel ADC data routing, multiple power rails and sensitive analogue circuitry.
 
@@ -32,7 +32,7 @@ A separate internal power layer also makes it easier to distribute the 1.1V, 2.5
 
 A 2-layer board would have made BGA escape routing, power distribution and maintaining good return paths a lot  more difficult.
 
-## Power Architecture
+## Power architecture
 The board generates several supply rails from the USB-C 5 V input:
 
 - 5 V — main input supply
