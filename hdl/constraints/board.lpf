@@ -1,0 +1,2 @@
+LOCATE COMP "clk_25mhz" SITE "E7";
+IOBUF PORT "clk_25mhz" IO_TYPE=LVCMOS33;
