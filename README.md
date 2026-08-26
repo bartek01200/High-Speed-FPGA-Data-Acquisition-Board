@@ -34,5 +34,5 @@ This project was intended to be physically assembled and tested. However, Mouser
 
 As a result, the project was completed through PCB design, HDL simulation, synthesis and timing verification rather than physical hardware testing.
 
-AI usage: Used AI for command-line guidance and toolchain troubleshooting. All PCB design, HDL implementation, integration, simulation, and project documentation were completed by me.
+AI usage: Used AI for command line guidance and toolchain troubleshooting. All PCB design, HDL implementation, integration, simulation, and project documentation were completed by me.
 
