@@ -1,7 +1,7 @@
 module daq_system ( //DAQ FPGA subsystem
     input  wire clk,
     input  wire  reset,
-    input  wire start//starts acquisition
+    input  wire start,//starts acquisition
 
     input  wire [7:0] adc_data,
     input  wire  tx_ready,
