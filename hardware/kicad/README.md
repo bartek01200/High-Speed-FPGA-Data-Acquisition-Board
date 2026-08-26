@@ -88,17 +88,7 @@ The layout was designed with consideration for:
 - Dedicated internal ground plane
 - Multi rail FPGA power requirements
 - Short switching regulator current loops
-
-##PCB Renders
-### Front
-
-![Front PCB](docs/images/front_pcb_new.png)
-
-### Back
-
-![Back PCB](docs/images/Back_of_pcb.png)
-
-
+  
 ##Design Status
 The schematic and PCB layout have been completed and PCB design rule checks were performed.
 
