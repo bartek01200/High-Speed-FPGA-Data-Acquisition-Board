@@ -128,9 +128,9 @@ Completed:
 Not physically verified due to the board not being assembled.
 
 ### End to end simulation:
-![DAQ System Waveform](images/pass2.png)
+![DAQ system waveform](../docs/images/Pass2.png)
 
 
 
 ### FPGA timing verification:
-![32 MHz Timing Verification](images/oass.png)
+![32MHz timing verification](../docs/images/Pass.png)
