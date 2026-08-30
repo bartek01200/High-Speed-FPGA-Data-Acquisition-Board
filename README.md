@@ -18,7 +18,7 @@ The system combines analogue signal conditioning, multi rail power regulation, F
 - ECP5 place and route using nextpnr
 - 32 MHz FPGA timing target successfully met
 
-##Key metrics include:
+## Key metrics include:
 The FPGA datapath handles a theoretical raw ADC input rate of 256 Mbit/s(32 MB/s), uses a 16-byte FIFO
 ,and met a 32MHz timing,using only 58 LUTs and 44 flip flop.
 
